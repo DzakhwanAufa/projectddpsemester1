@@ -65,7 +65,7 @@ def app_jkw():
         kecepatan = st.number_input(
             "Masukkan Kecepatan (K):",
             min_value=0.0,
-            value=60.0,
+            value=0.0,
             step=1.0
         )
         waktu = st.number_input(
@@ -81,7 +81,7 @@ def app_jkw():
             # logika: pastikan nilai input sebelum menghitung
             if kecepatan > 0 and waktu > 0:
                 hasil = hitung_jarak(kecepatan, waktu)
-                st.success(f"Hasil Jarak: {hasil:,.2f} Satuan")
+                st.success(f"Hasil Jarak: {hasil:,.2f} Km")
             else:
                 st.error("Kecepatan dan Waktu harus lebih besar dari nol.")
 
@@ -94,13 +94,13 @@ def app_jkw():
         jarak = st.number_input(
             "Masukkan Jarak (J):",
             min_value=0.0,
-            value=120.0,
+            value=0.0,
             step=1.0
         )
         waktu = st.number_input(
             "Masukkan Waktu (W):",
             min_value=0.0,
-            value=2.0,
+            value=0.0,
             step=0.1
         )
 
@@ -110,7 +110,7 @@ def app_jkw():
             # logika: cek apakah waktu bukan 0
             hasil = hitung_kecepatan(jarak, waktu)
             if hasil is not None:
-                st.success(f"### Hasil Kecepatan: {hasil:,.2f} Satuan/Satuan")
+                st.success(f"### Hasil Kecepatan: {hasil:,.2f} Km/Jam")
             else:
                 st.error("Waktu (W) tidak boleh nol.")
 
@@ -123,13 +123,13 @@ def app_jkw():
         jarak = st.number_input(
             "Masukkan Jarak (J):",
             min_value=0.0,
-            value=180.0,
+            value=0.0,
             step=1.0
         )
         kecepatan = st.number_input(
             "Masukkan Kecepatan (K):",
             min_value=0.0,
-            value=90.0,
+            value=0.0,
             step=1.0
         )
 
@@ -139,7 +139,7 @@ def app_jkw():
             # logika: cek apakah kecepatan bukan 0
             hasil = hitung_waktu(jarak, kecepatan)
             if hasil is not None:
-                st.success(f"### Hasil Waktu: {hasil:,.2f} Satuan")
+                st.success(f"### Hasil Waktu: {hasil:,.2f} Jam")
             else:
                 st.error("Kecepatan (K) tidak boleh nol.")
 
@@ -152,6 +152,7 @@ def app_jkw():
 if __name__ == '__main__':
 
     app_jkw()
+
 
 
 
