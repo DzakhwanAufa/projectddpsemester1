@@ -71,7 +71,7 @@ def app_jkw():
         waktu = st.number_input(
             "Masukkan Waktu (W):",
             min_value=0.0,
-            value=1.5,
+            value=0.0,
             step=0.1
         )
 
@@ -152,6 +152,7 @@ def app_jkw():
 if __name__ == '__main__':
 
     app_jkw()
+
 
 
 
