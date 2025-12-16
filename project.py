@@ -43,7 +43,11 @@ def app_jkw():
         )
 
     st.title("✍️ Aplikasi Perhitungan Jarak, Kecepatan, dan Waktu")
-
+    st.image(
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EFpLqZ5kKwEMRgzQF7g6dgCv5SN5Dew2lw&s",
+        caption="Ilustrasi Persegi",
+        width=300,
+    )
     # sidebar navigasi
     # variabel
     pilihan = st.sidebar.selectbox(
@@ -149,5 +153,6 @@ def app_jkw():
 if __name__ == '__main__':
 
     app_jkw()
+
 
 
