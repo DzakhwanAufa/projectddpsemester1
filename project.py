@@ -44,8 +44,7 @@ def app_jkw():
 
     st.title("✍️ Aplikasi Perhitungan Jarak, Kecepatan, dan Waktu")
     st.image(
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EFpLqZ5kKwEMRgzQF7g6dgCv5SN5Dew2lw&s",
-        caption="Ilustrasi Persegi",
+        "https://cdn.discordapp.com/attachments/1446879749178654924/1450484055274688594/rumus_jokowi.jpg?ex=6942b40b&is=6941628b&hm=142fc767821cfc5c59ff2afedeb7e9c6ff0da0509e463248f7f415d141a34b43",
         width=300,
     )
     # sidebar navigasi
@@ -153,6 +152,7 @@ def app_jkw():
 if __name__ == '__main__':
 
     app_jkw()
+
 
 
 
