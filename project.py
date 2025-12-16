@@ -114,7 +114,7 @@ def app_jkw():
     # perhitungan waktu (w)
     elif pilihan == "Waktu (W)":
         st.header("Hitung Waktu (W)")
-
+        st.latex(r''' W = \frac{J}{K} ''')
 
         # input jarak dan kecepatan
         jarak = st.number_input(
@@ -149,4 +149,5 @@ def app_jkw():
 if __name__ == '__main__':
 
     app_jkw()
+
 
