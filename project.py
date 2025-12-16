@@ -26,7 +26,7 @@ def Progressbar():
     progress_bar = st.progress(0)
     
     # looping: menggunakan perulangan for untuk progress bar
-    for persen in range(100):
+    for persen in range(101):
         time.sleep(0.005) 
         progress_bar.progress(persen)
     
@@ -152,6 +152,7 @@ def app_jkw():
 if __name__ == '__main__':
 
     app_jkw()
+
 
 
 
