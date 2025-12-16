@@ -141,10 +141,12 @@ def app_jkw():
                 st.error("Kecepatan (K) tidak boleh nol.")
 
     st.sidebar.header("Aplikasi Ini Dibuat Oleh :")
+    st.markdown("---")
     st.sidebar.caption("Widi Amanda Putri. H : 0110125145")
     st.sidebar.caption("Desyfa Intania Rahlina : 0110125148")
     st.sidebar.caption("Dzakhwan Aufa Saif : 0110125149")
 
 # menjalankan fungsi utama aplikasi
 if __name__ == '__main__':
+
     app_jkw()
