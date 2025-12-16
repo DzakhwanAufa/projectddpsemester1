@@ -81,7 +81,7 @@ def app_jkw():
             # logika: pastikan nilai input sebelum menghitung
             if kecepatan > 0 and waktu > 0:
                 hasil = hitung_jarak(kecepatan, waktu)
-                st.success(f"Hasil Jarak: {hasil:,.2f} Km")
+                st.success(f"### Hasil Jarak: {hasil:,.2f} Km")
             else:
                 st.error("Kecepatan dan Waktu harus lebih besar dari nol.")
 
@@ -152,6 +152,7 @@ def app_jkw():
 if __name__ == '__main__':
 
     app_jkw()
+
 
 
 
